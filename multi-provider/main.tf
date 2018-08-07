@@ -37,7 +37,7 @@ resource "aws_security_group" "training" {
     protocol  = "-1"
 
     # You'll change this in Task 2
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = ["185.199.108.153/32"]
   }
 }
 
