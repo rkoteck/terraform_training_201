@@ -1,0 +1,15 @@
+import "tfplan"
+
+all_resources = func() {
+	resources = []
+	for tfplan.module_paths as path {
+		resources += values(tfplan.module(path).resources)
+	}
+	return resources
+}
+
+main = rule {
+	print("TF All Resources: ", all_resources()) and
+	print("TF Root Resources: ", tfplan.resources) and
+	print("TF Version: ", tfplan.terraform_version)
+}

@@ -1,0 +1,10 @@
+{
+  "global": {
+    "firewall_rules": [
+      "{ \"direction\": \"ingress\", \"host\": \"8.8.8.8\" }"
+    ]
+  },
+
+    "test": { "main": false }
+}
+

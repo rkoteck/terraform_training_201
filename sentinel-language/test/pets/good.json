@@ -1,0 +1,12 @@
+{
+    "global": {
+      "families": [
+        { "children": true,  "dogs": "nice" },
+        { "children": false, "dogs": "mean" }
+      ]
+    },
+
+    "test": { "main": true }
+}
+
+

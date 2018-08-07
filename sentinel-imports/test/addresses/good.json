@@ -1,0 +1,12 @@
+{
+    "global": {
+      "firewall_rules": [
+        "{ \"direction\": \"ingress\", \"host\": \"192.168.2.3\" }",
+        "{ \"direction\": \"egress\",  \"host\": \"8.8.8.8\" }"
+      ]
+    },
+
+    "test": { "main": true }
+}
+
+

@@ -1,0 +1,18 @@
+{
+  "test": {
+    "main": false
+  },
+  "mock": { 
+    "tfplan": {
+      "resources": {
+        "mocked": true,
+        "mocked_instances": [
+          {
+            "0": { "applied": { "availability_zone": "us-west-2a" } },
+            "1": { "applied": { "availability_zone": "us-west-1a" } }
+          }
+        ]
+      }
+    } 
+  }
+}

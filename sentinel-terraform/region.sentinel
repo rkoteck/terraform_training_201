@@ -1,0 +1,18 @@
+import "tfplan"
+import "strings"
+
+get_aws_instances = func() {
+	if tfplan.resources["mocked"] else false {
+		return tfplan.resources["mocked_instances"]
+	}
+
+	instances = []
+	for tfplan.module_paths as path {
+		instances += values(tfplan.module(path).resources.aws_instance) else []
+	}
+	return instances
+}
+
+main = rule {
+	print(get_aws_instances())
+}
