@@ -1,0 +1,4 @@
+current_catch = 23
+catch_22 = rule { current_catch == 22 }
+reality_check = rule { 1 + 1 == 2 }
+main = rule { reality_check and not catch_22 }
